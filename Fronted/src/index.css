@@ -1,0 +1,17 @@
+/* 🌐 GLOBAL */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #f5f6f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Import component styles */
+@import './styles/FormRenderer.css';
+@import './styles/FieldRenderer.css';
+@import './styles/CardRenderer.css';

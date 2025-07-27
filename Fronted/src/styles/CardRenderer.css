@@ -1,0 +1,18 @@
+.cardrenderer-section {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.cardrenderer-section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.cardrenderer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+} 

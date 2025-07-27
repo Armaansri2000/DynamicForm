@@ -1,0 +1,104 @@
+.fieldrenderer-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.fieldrenderer-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #444;
+}
+
+.fieldrenderer-input,
+.fieldrenderer-select {
+  padding: 0.4rem 0.55rem;
+  border: 1px solid #dcdfe4;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  background: #fafafa;
+  transition: all 0.2s ease;
+  height: 32px;
+}
+
+.fieldrenderer-input:focus,
+.fieldrenderer-select:focus {
+  border-color: #4cafaa;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(76,175,170,0.15);
+  outline: none;
+}
+
+.fieldrenderer-input[type=number]::-webkit-inner-spin-button,
+.fieldrenderer-input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fieldrenderer-error {
+  color: #e63946;
+  font-size: 0.7rem;
+  margin-top: 2px;
+  display: block;
+}
+
+/* Dropdown Styling */
+.fieldrenderer-dropdown-display {
+  background: #fafafa;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #dcdfe4;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  transition: all 0.2s ease;
+}
+
+.fieldrenderer-dropdown-display:hover {
+  border-color: #4cafaa;
+  background: #fff;
+}
+
+.fieldrenderer-dropdown-arrow {
+  font-size: 11px;
+  color: #666;
+  margin-left: 6px;
+}
+
+.fieldrenderer-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.fieldrenderer-dropdown-item {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.fieldrenderer-dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.fieldrenderer-dropdown-item input[type="checkbox"] {
+  margin: 0;
+  accent-color: #4cafaa;
+} 
