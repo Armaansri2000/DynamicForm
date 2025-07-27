@@ -1,0 +1,14 @@
+const express = require('express');
+const router = express.Router();
+const formSchema = require('../schemas/formSchema');
+
+// GET /api/form-schema
+router.get('/form-schema', (req, res) => {
+  try {
+    res.json(formSchema);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch form schema' });
+  }
+});
+
+module.exports = router; 
